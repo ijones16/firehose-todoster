@@ -17,7 +17,8 @@
   $(function(){
     $('#new-form').submit(function(event) {
       event.preventDefault();
-      console.log("intercepted.");
+      var textbox = $('.new-todo');
+      console.log("Task", textbox.val());
     })
 
     // The taskHtml method takes in a JavaScript representation
